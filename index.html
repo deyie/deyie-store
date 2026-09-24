@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deya Store — Pilih Katalog & Pembayaran</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sparkle-bar" aria-hidden="true">✨ 🎀 payment all e-wallet & qris 🎀 bergaransi & fast respon 🎀 ✨</div>
+
+  <header class="site-header" style="justify-content: center; text-align: center;">
+    <div class="brand">
+      <span class="brand-mark">🎀</span>
+      <div class="brand-text">
+        <h1>Deya Store</h1>
+        <p>pilih layanan atau metode pembayaran di bawah ya~</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="padding-bottom: 20px;">
+    <h2>Mau jajan apa hari ini? <span class="wiggle">💖</span></h2>
+    <p>Silakan pilih katalog produk atau cek informasi pembayaran QRIS di bawah ini.</p>
+  </section>
+
+  <!-- Container dikembalikan ke ukuran normal (1000px) agar muat 2 kolom berdampingan -->
+  <main class="container" style="max-width: 1000px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; padding-bottom: 50px;">
+    
+    <!-- 1. Katalog Aplikasi Premium -->
+    <a href="app.html" class="movie-card" style="text-decoration: none; padding: 26px; text-align: center; align-items: center; justify-content: center;">
+      <div class="icon-badge p1" style="width: 60px; height: 60px; font-size: 28px; margin-bottom: 12px;">🎬</div>
+      <h3 style="font-family: 'Baloo 2', sans-serif; font-size: 20px; color: var(--rose-dark); margin-bottom: 6px;">Aplikasi Premium</h3>
+      <p style="font-size: 13px; color: var(--plum-soft); margin-bottom: 18px;">Streaming, Education, Music & Editing terlengkap.</p>
+      <span class="btn-watch" style="width: 100%;">Buka Katalog App 🌸</span>
+    </a>
+
+    <!-- 2. Katalog Sosmed Deyie -->
+    <a href="sosmed.html" class="movie-card" style="text-decoration: none; padding: 26px; text-align: center; align-items: center; justify-content: center;">
+      <div class="icon-badge p3" style="width: 60px; height: 60px; font-size: 28px; margin-bottom: 12px;">🔥</div>
+      <h3 style="font-family: 'Baloo 2', sans-serif; font-size: 20px; color: var(--rose-dark); margin-bottom: 6px;">Sosmed Deyie</h3>
+      <p style="font-size: 13px; color: var(--plum-soft); margin-bottom: 18px;">Followers, Likes, & Views Instagram, TikTok, dll.</p>
+      <span class="btn-watch" style="width: 100%;">Buka Katalog Sosmed ✨</span>
+    </a>
+
+    <!-- 3. QRIS Payment (Mengarah ke qris.html di tab yang sama) -->
+    <a href="qris.html" class="movie-card" style="text-decoration: none; padding: 26px; text-align: center; align-items: center; justify-content: center; display: flex; flex-direction: column;">
+      <div class="icon-badge p2" style="width: 60px; height: 60px; font-size: 28px; margin-bottom: 12px;">💳</div>
+      <h3 style="font-family: 'Baloo 2', sans-serif; font-size: 20px; color: var(--rose-dark); margin-bottom: 6px;">QRIS Payment</h3>
+      <p style="font-size: 13px; color: var(--plum-soft); margin-bottom: 18px;">Scan pakai GoPay, Dana, OVO, BCA, atau m-banking apa saja.</p>
+      <span class="btn-watch" style="width: 100%;">Lihat Barcode QRIS 🌸</span>
+    </a>
+
+    <!-- 4. Telegram & X (Twitter) - Khusus sosmed luar boleh pakai target="_blank" agar tidak menutup web utama -->
+    <div class="movie-card" style="padding: 26px; text-align: center; align-items: center; justify-content: center; display: flex; flex-direction: column;">
+      <div class="icon-badge p5" style="width: 60px; height: 60px; font-size: 28px; margin-bottom: 12px;">📢</div>
+      <h3 style="font-family: 'Baloo 2', sans-serif; font-size: 20px; color: var(--rose-dark); margin-bottom: 6px;">Telegram & X</h3>
+      <p style="font-size: 13px; color: var(--plum-soft); margin-bottom: 18px;">Join channel Telegram atau pantau update terbaru di X kami.</p>
+      <div style="display: flex; gap: 8px; width: 100%;">
+        <a class="btn-watch" href="https://t.me/username_telegram" target="_blank" rel="noopener" style="flex: 1; font-size: 12px; padding: 10px;">Telegram ✈️</a>
+        <a class="btn-watch" href="https://x.com/tiynket" target="_blank" rel="noopener" style="flex: 1; font-size: 12px; padding: 10px; background: linear-gradient(135deg, #333, #000);">X (Twitter) ✖️</a>
+      </div>
+    </div>
+    
+  </main>
+
+  <section class="trust-strip">
+    <div><span>🔒</span> Bergaransi Resmi</div>
+    <div><span>⚡</span> Proses Cepat</div>
+    <div><span>💬</span> Chat Admin Ramah</div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Dibuat dengan sepenuh hati oleh Deya Store 💌 — order gampang, chat aja via WhatsApp!</p>
+  </footer>
+
+</body>
+</html>
