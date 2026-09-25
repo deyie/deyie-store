@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout Pemesanan — Deya Store</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sparkle-bar" aria-hidden="true">✨ 🎀 scan qris & isi form pemesanan 🎀 ✨</div>
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+        <span class="brand-mark">🎀</span>
+        <div class="brand-text">
+          <h1>Deya Store</h1>
+          <p>← Kembali ke Katalog</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="container" style="max-width: 600px;">
+    <div style="background: var(--pink-card); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); border: 2px solid #ffe4e1;">
+      
+      <!-- Bagian Gambar QRIS di Atas -->
+      <div style="text-align: center; margin-bottom: 20px;">
+        <h3 style="font-family: 'Baloo 2', cursive; color: var(--rose-dark); font-size: 20px; margin-bottom: 10px;">QRIS Payment - Deya Store</h3>
+        <div style="background: #fff; padding: 12px; border-radius: 14px; border: 2px dashed var(--rose-light); display: inline-block;">
+          <img src="QRIS_DEYIE.jpg" alt="QRIS Deya Store" style="max-width: 100%; width: 280px; height: auto; border-radius: 8px;">
+        </div>
+        <p style="font-size: 12px; color: var(--plum-soft); margin-top: 8px;">Scan atau screenshot QRIS di atas untuk melakukan pembayaran[cite: 5] 💳</p>
+      </div>
+
+      <hr style="border: none; border-top: 1px dashed #ffb6c1; margin: 20px 0;">
+
+      <!-- Detail Produk yang Dipilih -->
+      <div id="product-summary" style="margin-bottom: 20px;">
+        <h3 id="det-name" style="font-family: 'Baloo 2', cursive; color: var(--rose-dark); font-size: 22px;">Nama Produk</h3>
+        <p id="det-desc" style="font-size: 13px; color: var(--plum-soft); margin-top: 4px;">Deskripsi produk...</p>
+      </div>
+
+      <!-- Pilihan Paket / Varian (GForm Style) -->
+      <div class="form-group">
+        <label for="select-plan">Pilih Paket / Durasi 🌸</label>
+        <select id="select-plan" class="form-control">
+          <!-- Diisi otomatis oleh JavaScript -->
+        </select>
+      </div>
+
+      <!-- Form Data User (Sesuai contoh chat)[cite: 5] -->
+      <div class="form-group">
+        <label for="input-wa">No WhatsApp Kamu 📱</label>
+        <input type="text" id="input-wa" class="form-control" placeholder="Contoh: 081234567895">
+      </div>
+
+      <div class="form-group">
+        <label for="input-device">Merk Device / HP Kamu 📱</label>
+        <input type="text" id="input-device" class="form-control" placeholder="Contoh: iPhone 14 / Samsung A54">
+      </div>
+
+      <div class="form-group">
+        <label for="input-lokasi">Lokasi Login / Kota 📍</label>
+        <input type="text" id="input-lokasi" class="form-control" placeholder="Contoh: Bandung / Jakarta">
+      </div>
+
+      <!-- Tombol Pesan Sekarang yang Mengarah ke WhatsApp[cite: 5] -->
+      <button id="btn-checkout" class="btn-watch" style="width: 100%; padding: 14px; font-size: 16px; margin-top: 10px;">
+        💌 Pesan Sekarang via WhatsApp
+      </button>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Dibuat dengan sepenuh hati oleh Deya Store 💌</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

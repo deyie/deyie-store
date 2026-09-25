@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deya Store — Pilih Layanan</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sparkle-bar" aria-hidden="true">✨ 🎀 welcome to deya store 🎀 trusted & bergaransi 🎀 ✨</div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">🎀</span>
+      <div class="brand-text">
+        <h1>Deya Store</h1>
+        <p>pilih layanan favoritmu di bawah ya~</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Mau jajan apa hari ini? <span class="wiggle">💖</span></h2>
+    <p>Cari aplikasi atau layanan sosial media impianmu di sini!</p>
+  </section>
+
+  <!-- Kolom Pencarian & Filter Kategori -->
+  <div style="width: 100%; max-width: 800px; margin-bottom: 20px;">
+    <!-- Search Bar -->
+    <input type="text" id="search-box" class="form-control" placeholder="🔍 Cari Netflix, Spotify, Followers TikTok, dll..." style="margin-bottom: 12px; background: #fff;">
+    
+    <!-- Kategori Chips -->
+    <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px;" id="category-chips">
+      <button class="chip active" data-cat="all">Semua ✨</button>
+      <button class="chip" data-cat="Streaming">Streaming 🎬</button>
+      <button class="chip" data-cat="Education">Education 📚</button>
+      <button class="chip" data-cat="Music & Editing">Music & Editing 🎧</button>
+      <button class="chip" data-cat="Sosmed">Sosmed Needs 🔥</button>
+    </div>
+  </div>
+
+  <!-- Container Katalog (Grid Kotak Persegi) -->
+  <main class="container" id="main-catalog">
+    <!-- Diisi otomatis oleh script.js -->
+  </main>
+
+  <!-- Pesan Jika Tidak Ditemukan -->
+  <div id="empty-state" style="display: none; text-align: center; padding: 30px; color: var(--plum-soft); font-size: 14px;">
+    Duh, layanan yang kamu cari tidak ketemu nih 🥺<br>Coba kata kunci lain ya!
+  </div>
+
+  <section class="trust-strip">
+    <div><span>🔒</span> Bergaransi Resmi</div>
+    <div><span>⚡</span> Proses Cepat</div>
+    <div><span>💬</span> Chat Admin Ramah</div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Dibuat dengan sepenuh hati oleh Deya Store 💌</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
